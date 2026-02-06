@@ -1,0 +1,72 @@
+:root {
+  /* Brand Colors - Minimalist Black/White */
+  --vp-c-brand-1: #000000;
+  --vp-c-brand-2: #333333;
+  --vp-c-brand-3: #666666;
+  --vp-c-brand-soft: rgba(0, 0, 0, 0.16);
+  
+  /* Backgrounds */
+  --vp-c-bg: #ffffff;
+  --vp-c-bg-alt: #f8f9fa;
+  --vp-c-bg-soft: #f0f0f0;
+
+  /* Glassmorphism Variables */
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(0, 0, 0, 0.1);
+  --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+}
+
+.dark {
+  /* Brand Colors - Dark Mode */
+  --vp-c-brand-1: #ffffff;
+  --vp-c-brand-2: #e5e5e5;
+  --vp-c-brand-3: #d4d4d4;
+  --vp-c-brand-soft: rgba(255, 255, 255, 0.16);
+
+  /* Backgrounds */
+  --vp-c-bg: #0f0f0f;
+  --vp-c-bg-alt: #1a1a1a;
+  --vp-c-bg-soft: #262626;
+
+  /* Glassmorphism Variables */
+  --glass-bg: rgba(0, 0, 0, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* Global Glassmorphism Class */
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
+}
+
+/* Navbar Glass Effect Override */
+.VPNavBar {
+  background-color: rgba(255, 255, 255, 0.8) !important;
+  backdrop-filter: blur(12px);
+}
+
+.dark .VPNavBar {
+  background-color: rgba(15, 15, 15, 0.8) !important;
+}
+
+/* Button Overrides for B&W Theme */
+.VPButton.brand {
+  background-color: var(--vp-c-brand-1);
+  color: var(--vp-c-bg);
+  border-color: var(--vp-c-brand-1);
+}
+
+.VPButton.brand:hover {
+  background-color: var(--vp-c-brand-2);
+  border-color: var(--vp-c-brand-2);
+}
+
+/* Custom Selection Color */
+::selection {
+  background-color: var(--vp-c-brand-1);
+  color: var(--vp-c-bg);
+}
