@@ -10,7 +10,7 @@ import ParallaxHills from "./ParallaxHills.vue";
       <ParallaxHills />
       <div class="hero-content">
         <h1 class="hero-title">JustExtension</h1>
-        <p class="hero-subtitle">浏览器插件开发工具集与学习指南</p>
+        <p class="hero-subtitle">浏览器插件工具集与学习指南</p>
         <div class="hero-actions">
           <a href="/guide/" class="btn primary">开始学习</a>
           <a
@@ -25,7 +25,6 @@ import ParallaxHills from "./ParallaxHills.vue";
 
     <section class="plugins-grid">
       <div class="container">
-        <h2 class="section-title">工具集</h2>
         <div class="grid">
           <PluginCard
             v-for="plugin in plugins"
