@@ -7,7 +7,9 @@ import ParallaxHills from "./ParallaxHills.vue";
 <template>
   <div class="home-container">
     <section class="hero">
-      <ParallaxHills />
+      <ClientOnly>
+        <ParallaxHills />
+      </ClientOnly>
       <div class="hero-content">
         <h1 class="hero-title">JustExtension</h1>
         <p class="hero-subtitle">浏览器插件工具集与学习指南</p>
