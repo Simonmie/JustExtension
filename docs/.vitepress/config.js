@@ -1,13 +1,14 @@
 import { defineConfig } from "vitepress";
 
 export default defineConfig({
+  base: "/JustExtension/",
   title: "JustExtension",
   description: "浏览器插件工具集与开发指南",
 
-  head: [["link", { rel: "icon", href: "/favicon.ico" }]],
+  head: [["link", { rel: "icon", href: "/JustExtension/favicon.ico" }]],
 
   themeConfig: {
-    logo: "/logo.svg", // Optional: Add a logo if available later
+    logo: "/logo.svg", // VitePress handles base for logo automatically in most cases, but let's verify if user has this file
 
     nav: [
       { text: "首页", link: "/" },
